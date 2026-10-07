@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | QueueLess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>QueueLess Admin</h1>
+
+    <p>Queue Management Dashboard</p>
+
+</header>
+
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="user.html">User</a>
+
+</nav>
+
+
+<main class="dashboard">
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+            <h3>Current Token</h3>
+            <p id="adminCurrent">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Waiting People</h3>
+            <p id="adminWaiting">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Waiting Time</h3>
+            <p id="adminTime">0 min</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Crowd Level</h3>
+            <p id="adminCrowd">Low</p>
+        </div>
+
+    </div>
+
+
+    <h2 class="queue-heading">Queue List</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Token</th>
+                    <th>Name</th>
+                    <th>Service</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="queueTable"></tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="admin-buttons">
+
+        <button onclick="nextCustomer()">
+            ▶ Next Customer
+        </button>
+
+        <button
+            class="danger"
+            onclick="clearQueue()">
+            🗑 Clear Queue
+        </button>
+
+    </div>
+
+    <p id="adminMessage"></p>
+
+</main>
+
+
+<script src="database.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

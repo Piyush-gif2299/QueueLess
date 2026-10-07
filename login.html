@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | QueueLess</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>QueueLess</h1>
+    <p>Login to Continue</p>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#solutions">Solutions</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="form-container">
+
+    <h2>Login</h2>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Enter your name"
+    >
+
+    <select id="role">
+
+        <option value="user">User</option>
+
+        <option value="admin">Admin</option>
+
+    </select>
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMessage"></p>
+
+</div>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

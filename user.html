@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Get Token | QueueLess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>QueueLess</h1>
+
+    <p>Get Your Digital Token</p>
+
+</header>
+
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="index.html#about">About</a>
+
+    <a href="index.html#solutions">Solutions</a>
+
+    <a href="admin.html">Admin</a>
+
+</nav>
+
+
+<div class="form-container">
+
+    <h2>🎟️ Join Virtual Queue</h2>
+
+    <input
+        type="text"
+        id="customerName"
+        placeholder="Enter your name"
+    >
+
+    <select id="service">
+
+        <option value="Hospital">🏥 Hospital</option>
+
+        <option value="Bank">🏦 Bank</option>
+
+        <option value="Government Office">
+            🏛️ Government Office
+        </option>
+
+        <option value="Business">🏢 Business</option>
+
+    </select>
+
+    <button id="tokenButton" onclick="joinQueue()">
+        Get Digital Token
+    </button>
+
+    <div id="tokenBox"></div>
+
+</div>
+
+
+<section class="status-container">
+
+    <h2>Live Queue Status</h2>
+
+    <div class="status-grid">
+
+        <div class="status-card">
+            <h3>Current Token</h3>
+            <p id="currentToken">0</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Waiting People</h3>
+            <p id="totalPeople">0</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Crowd Status</h3>
+            <p id="crowdStatus">Low</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
